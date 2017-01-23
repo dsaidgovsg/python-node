@@ -5,9 +5,6 @@ contains a `node.js` installation based off the official [docker image](https://
 
 The `onbuild` variant contains `onbuild` instruction to install `pip` and `npm` dependencies.
 
-## Logging in to Gitlab Container Registry
-Credentials are managed by `docker login`. Login with `docker login registry.gitlab.com`
-
 ## Building and pushing new images
 Assuming that the Python version we want to build is `3.5` and the Node.js version is `6.1`, then we can build
 the images as such:
