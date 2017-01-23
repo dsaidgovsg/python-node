@@ -1,5 +1,5 @@
 FROM python:3.5
-MAINTAINER Yong Wen Chua <chua_yong_wen@ida.gov.sg>
+MAINTAINER Yong Wen Chua <chua_yong_wen@tech.gov.sg>
 
 # Setup Node.js
 # From https://github.com/nodejs/docker-node/blob/master/6.1/Dockerfile
