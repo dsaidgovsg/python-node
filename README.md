@@ -6,18 +6,18 @@ contains a `node.js` installation based off the official [docker image](https://
 The `onbuild` variant contains `onbuild` instruction to install `pip` and `npm` dependencies.
 
 ## Building and pushing new images
-Assuming that the Python version we want to build is `3.5` and the Node.js version is `6.1`, then we can build
+Assuming that the Python version we want to build is `3.5` and the Node.js version is `6.9.4`, then we can build
 the images as such:
 
 ```bash
-docker build -t registry.gitlab.com/finnet-gds/python-node:3.5-6.1 .
-docker push registry.gitlab.com/finnet-gds/python-node:3.5-6.1
+docker build -t python-node:3.5-6.9.4 .
+docker push python-node:3.5-6.9.4
 
-docker build -t registry.gitlab.com/finnet-gds/python-node:3.5-6.1-onbuild onbuild/
-docker push registry.gitlab.com/finnet-gds/python-node:3.5-6.1-onbuild
+docker build -t python-node:3.5-6.9.4-onbuild onbuild/
+docker push python-node:3.5-6.9.4-onbuild
 ```
 
 ## Supported tags and respective `Dockerfile` links
 
-- `3.5-6.1`: Python 3.5 with Node.js 6.1.0 ([Dockerfile](Dockerfile))
-- `3.5-6.1-onbuild`: Python 3.5 with Node.js 6.1.0 with `ONBUILD` triggers ([Dockerfile](onbuild/Dockerfile))
+- `3.5-6.9.4`: Python 3.5 with Node.js 6.9.4 ([Dockerfile](Dockerfile))
+- `3.5-6.9.4-onbuild`: Python 3.5 with Node.js 6.9.4 with `ONBUILD` triggers ([Dockerfile](onbuild/Dockerfile))
