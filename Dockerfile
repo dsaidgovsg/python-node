@@ -1,4 +1,4 @@
-FROM python:3.5
+FROM python:3.6
 MAINTAINER Yong Wen Chua <chua_yong_wen@tech.gov.sg>
 
 # Setup Node.js
@@ -19,7 +19,7 @@ RUN set -ex \
   done
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 6.9.4
+ENV NODE_VERSION 6.10.3
 
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz" \
   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \
